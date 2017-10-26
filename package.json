@@ -4,11 +4,11 @@
   "description": "Node.js bindings for librdkafka",
   "main": "lib/index.js",
   "scripts": {
-    "configure": "node-gyp configure",
-    "build": "node-gyp build",
+    "configure": "node-gyp -v configure",
+    "build": "node-gyp -v build",
     "test": "make test",
     "preinstall": "node util/configure",
-    "install": "node-gyp rebuild"
+    "install": "which node-gyp; node-gyp -v rebuild"
   },
   "keywords": [
     "kafka",
